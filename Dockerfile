@@ -1,4 +1,4 @@
-FROM jboss/keycloak:4.1.0.Final
+FROM jboss/keycloak:latest
 MAINTAINER https://gitter.im/Activiti/Activiti7
 
 RUN /opt/jboss/keycloak/bin/add-user.sh -u admin -p admin
