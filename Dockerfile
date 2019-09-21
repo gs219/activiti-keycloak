@@ -6,10 +6,10 @@ RUN /opt/jboss/keycloak/bin/add-user-keycloak.sh -r master -u admin -p admin
 
 ADD activiti-realm.json /opt/jboss/keycloak/
 
-ENTRYPOINT [ "/opt/jboss/docker-entrypoint.sh" ]
+ENTRYPOINT [ "/opt/jboss/tools/docker-entrypoint.sh" ]
 
 ENV PORT_OFFSET 100
-ENV DB_VENDOR=h2
+ENV DB_VENDOR mariadb
 
 EXPOSE 8180 30081
 
